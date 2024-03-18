@@ -1,0 +1,88 @@
+.footer{
+    @include taille (100%,500px);
+    background-color: #1d1d1d;
+   @include flexbox (flex,column,center);
+   
+   .footerOne{
+    @include taille (90%,75%);
+    border-top: solid 2px rgb(74, 74, 247);
+    border-bottom: solid 2px rgb(74, 74, 247);
+    @include flexbox (flex,row,space-evenly);
+        h1{
+            font-size: 3em;
+            color: White;
+            span{
+                color: rgb(0, 102, 255);
+            }
+        }
+        .nav{
+            @include taille (10%,90%);
+            @include flexbox (flex, column,space-evenly);
+            align-items: flex-start;
+            h1{
+                font-size: 2em;
+            color: White;
+            }
+            
+            .navy{
+                @include taille (100%,90%);
+                @include flexbox (flex, column,space-evenly);
+                align-items: flex-start;
+                a{
+                    text-decoration: none;
+                    font-size: 1.5em;
+                    color: white;
+                }
+            }
+        }
+        .resseau{
+            @include taille (24%,90%);
+            @include flexbox (flex,column,space-evenly);
+            align-items: flex-start;
+            h2{
+                font-size: 2em;
+                color: White;
+            }
+            .contct{
+                @include taille (100%,20%);
+                @include flexbox (flex,row,center);
+                justify-content: flex-start;
+                i{
+                    font-size: 1.5em;
+                    color: rgb(32, 148, 249);
+                    margin-right: 10px;
+                }
+                h2{
+                    font-size: 1.1em;
+                    color:white ;
+                }
+                
+            }
+        }
+
+        .message{
+            @include taille (20%,90%);
+            @include flexbox (flex,column,space-evenly);
+            align-items: flex-start;
+            h1{
+                font-size: 2em;
+            }
+            form{
+                @include taille (95%,90%);
+                @include flexbox (flex,column,space-evenly);
+                align-items: flex-start;
+                input{
+                    @include taille (80%,20%);
+                    background-color: #1d1d1d;
+                    outline: none;
+                    border: none;
+                    border-bottom: solid 2px blue;
+                }
+                button{
+                    @include taille (150px,40px);
+                }
+        } 
+    }
+        
+   }
+}

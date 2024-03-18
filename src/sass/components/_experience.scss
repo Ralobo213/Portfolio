@@ -1,0 +1,67 @@
+.experience{
+    @include taille (100%,700px);
+    background-color: #1d1d1d;
+    @include flexbox(flex,row,space-evenly);
+    .block{
+        @include taille (45%,70%);
+    }
+    .prime{
+        @include flexbox (flex,column,center);
+        @include taille (35%,69%);
+        background-color: #4747473f;
+        backdrop-filter: blur(15px);
+        border-radius: 100%;
+        box-shadow:0px 0px 11px 0px rgb(45, 62, 103);
+        position: relative;
+        i{
+            font-size: 9em;
+            color: #304cc8;
+            
+        }
+        h2{
+            font-size: 3em;
+            color: aliceblue;
+           
+        }
+        .fa-hand-point-right{
+            @include position (absolute,40%,110%);
+            animation: right 2s linear 0s infinite;
+            @keyframes right {
+                0%{transform: translateX(0%);}
+                50%{transform: translateX(6%);}
+                100%{transform: translateX(0%);}
+            }
+        }
+    }
+    .second{
+        #{$h}:100%;
+        @include flexbox (flex,column,space-evenly);
+        
+        .one{
+            @include taille (60%,25%);
+            @include flexbox (flex,row,center);
+            #{$bg}:linear-gradient(120deg, rgb(0, 106, 255), rgb(71, 166, 255), rgb(38, 189, 215));
+            border-radius: 10px;
+            transition: 0.7s;
+            i{
+                font-size: 3em;
+                margin-right: 20px;
+                color: aliceblue;
+            }
+            h2{
+                font-size: 1.5em;
+                color: aliceblue;
+                font-family: sans-serif;
+                span{
+                    font-size: 0.8em;
+                }
+            }
+            &:hover{
+                transform: translateY(-10%);
+                box-shadow:2px 45px 42px -30px rgb(45, 62, 103);
+                transition: 0.7s ease;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.skylls{
+    @include taille (100%,800px);
+    background-color: #1d1d1d;
+    @include flexbox (flex,row,center);
+    .blockskyl{
+        @include taille (30%,50%);
+        background: url(./../../../public/img/skylls.png) ;
+        @include background (50%);
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 0 11px 0;
+        position: relative;
+        margin: 0 10px;
+        .cach{
+            @include taille (100%,100%);
+            background: linear-gradient(0deg,rgb(2, 137, 255),rgba(82, 192, 255, 0.805),rgba(255, 255, 255, 0.236));
+            @include flexbox(flex,row,center);
+            h1{
+                font-size: 3em;
+                font-family: sans-serif;
+                color: antiquewhite;
+            }
+            i{
+                font-size: 4.5em;
+                color: rgb(2, 78, 255);
+            }
+        }
+    }
+    .left{
+        @include taille (20%,80%);
+        @include flexbox (flex,column,space-evenly);
+        .catego{
+            @include  taille (90%,20%);
+            border-radius: 15px;
+            background-color: #5e6b83a6;
+            box-shadow: 0 0 11px 0;
+            transition: 0.7s;
+            @include flexbox (flex,row,center);
+            i{
+                font-size: 3em;
+                margin-right: 10px;
+                color: aquamarine;
+            }
+            h1{
+                color: aliceblue;
+            }
+            &:hover{
+                transform: translateY(-10%);
+                box-shadow:2px 45px 42px -30px rgb(43, 50, 65);
+                transition: 0.7s ease;
+    
+            }
+        }
+        
+    }
+}

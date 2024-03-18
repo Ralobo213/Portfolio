@@ -1,0 +1,23 @@
+   @import './components/function';
+   @import './components/variable';
+   @import './components/apropos';
+   @import'./components/nav';
+   @import './components/header';
+   @import './components/sectionOne';
+   @import './components/sectionTwo';
+   @import './components/experience';
+   @import './components/skylls';
+   @import './components/contact';
+   @import './components/footer';
+   @import './components/projet';
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+}
